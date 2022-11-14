@@ -40,15 +40,15 @@
     </PropertyGroup>
     <!-- NuGet -->
     <ItemGroup>
-        <PackageReference Include="HarmonyX" Version="2.5.2" IncludeAssets="compile" />
+        <PackageReference Include="HarmonyX" Version="2.10.1" IncludeAssets="compile" />
         <PackageReference Include="UniverseLib.Analyzers" Version="1.0.4" IncludeAssets="compile" />
     </ItemGroup>
     <ItemGroup Condition="'$(Configuration)' == 'Release_IL2CPP_Unhollower'">
         <PackageReference Include="Il2CppAssemblyUnhollower.BaseLib" Version="0.4.22" IncludeAssets="compile" />
     </ItemGroup>
     <ItemGroup Condition="'$(Configuration)' == 'Release_IL2CPP_Interop'">
-        <PackageReference Include="Il2CppInterop.Common" Version="1.0.0" />
-        <PackageReference Include="Il2CppInterop.Runtime" Version="1.0.0" />
+        <PackageReference Include="Il2CppInterop.Common" Version="1.4.0" />
+        <PackageReference Include="Il2CppInterop.Runtime" Version="1.4.0" />
     </ItemGroup>
     <!-- Assembly References -->
     <ItemGroup Condition="'$(Configuration)' == 'Release_Mono'">
