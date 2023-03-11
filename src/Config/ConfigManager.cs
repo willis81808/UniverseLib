@@ -34,10 +34,10 @@ namespace UniverseLib.Config
         }
 
         /// <summary>If true, disables UniverseLib from overriding the EventSystem from the game when a UniversalUI is in use.</summary>
-        public static bool Disable_EventSystem_Override { get; set; }
+        public static bool Disable_EventSystem_Override { get; set; } = true;
 
         /// <summary>If true, attempts to force-unlock the mouse (<see cref="UnityEngine.Cursor"/>) when a UniversalUI is in use.</summary>
-        public static bool Force_Unlock_Mouse { get; set; }
+        public static bool Force_Unlock_Mouse { get; set; } = false;
 
         /// <summary>For IL2CPP games, this should be the full path to a folder containing the Unhollowed assemblies.
         /// This property is only used during the intial startup process.</summary>
@@ -47,6 +47,6 @@ namespace UniverseLib.Config
         public static bool Disable_Fallback_EventSystem_Search { get; set; }
 
         /// <summary>If true, GameObjects which are not a child to a <see cref="UIBase"/> can be selected as the selected GameObject by the EventSystem.</summary>
-        public static bool Allow_UI_Selection_Outside_UIBase { get; set; }
+        public static bool Allow_UI_Selection_Outside_UIBase { get; set; } = true;
     }
 }

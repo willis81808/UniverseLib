@@ -26,7 +26,7 @@ namespace UniverseLib.Input
         {
             InitHandler();
             InitKeycodes();
-            CursorUnlocker.Init();
+            //CursorUnlocker.Init();
             EventSystemHelper.Init();
         }
 
